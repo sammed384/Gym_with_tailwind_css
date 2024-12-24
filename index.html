@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-white font-["Poppins", serif]">
+    
+    <header class="relative p-4 h-[4.563rem] w-[100%] bg-[#40495366] sticky top-0 z-[1]">
+      <div class="flex items-center justify-between max-w-[1120px] m-auto">
+        <div>
+            <h1 class="uppercase text-[2rem] font-[900] text-white cursor-pointer">Training <span class="text-[#d8464d]">Studio</span></h1>
+        </div>
+        <div class="hidden md:flex space-x-10">
+            <a href="#home" class="text-[#fcfafa] hover:text-[#d45f65]"><span class="text-[#d8464d]">HOME</span></a>
+            <a href="#about" class="text-[#fcfafa] hover:text-[#d45f65]">ABOUT</a>
+            <a href="#classes" class="text-[#fcfafa] hover:text-[#d45f65]">CLASSES</a>
+            <a href="#schedules" class="text-[#fcfafa] hover:text-[#d45f65]">SCHEDULES</a>
+            <a href="#contact" class="text-[#fcfafa] hover:text-[#d45f65] ">CONTACT</a>
+        </div>
+        <div>
+          <button
+          class="hidden md:flex bg-[#ed563b] hover:bg-orange-400 text-white font-bold cursor-pointer p-[0.625rem] border-none">
+          SIGN UP
+          </button>
+        </div>
+
+        <!--Humbuger icons-->
+        <button id="menu" class="humburger block md:hidden">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+      </div>
+
+      <!--Menu Mobile-->
+      <div class="md:hidden">
+        <div
+          class="absolute hidden flex-col items-center selft-end py-6 mt-10 space-y-6 font-bold bg-slate-400 sm:w-auto sm:self-center top-8 left-6 right-6 drop-shadow-md"
+          id="mobile-menu"
+        >
+        <a href="#home" class="text-black hover:text-[#d45f65]"><span class="text-[#d8464d]">HOME</span></a>
+        <a href="#about" class="text-black hover:text-[#d45f65]">ABOUT</a>
+        <a href="#classes" class="text-black hover:text-[#d45f65]">CLASSES</a>
+        <a href="#schedules" class="text-black hover:text-[#d45f65]">SCHEDULES</a>
+        <a href="#contact" class="text-black hover:text-[#d45f65] ">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative overflow-hidden h-screen flex justify-center items-center">
+        <!-- Vidéo de fond -->
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="https://videos.pexels.com/video-files/3191884/3191884-sd_640_360_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      
+        <!-- Contenu superposé -->
+        <div class="relative text-center z-10">
+          <!-- Slogan -->
+          <h3 class="text-white uppercase text-[1.188rem] font-bold leading-[1.813] mb-4">
+            Work harder, get stronger
+          </h3>
+      
+          <!-- Titre principal -->
+          <h1 class="text-white uppercase text-[2.5rem] md:text-[4.125rem] font-extrabold mb-6">
+            Easy with our <span class="text-[#d8464d]">Gym</span>
+          </h1>
+      
+          <!-- Bouton CTA -->
+          <button class="hidden md:inline-block bg-[#ed563b] hover:bg-[#d8464d] text-white uppercase px-6 py-3 rounded-md transition-colors">
+            Become a member
+          </button>
+        </div>
+      
+        <!-- Overlay sombre pour lisibilité -->
+        <div class="absolute inset-0 bg-black/40"></div>
+      </div>
+      
+<!-- Section 1 Choose Program -->
+
+<section class="max-w-[1120px] mx-auto px-4">
+    <!-- En-tête de section -->
+    <div class="mt-[10rem] mb-[4rem] flex flex-col gap-[1.25rem] justify-center items-center text-center">
+      <h2 class="text-black uppercase text-[1.75rem] md:text-[2rem] font-[800]">
+        Choose <span class="text-[#d8464d]">Program</span>
+      </h2>
+      <img
+        src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+        alt="Line decoration"
+      />
+      <p class="text-[#7a7a7a] text-[0.875rem] md:text-[1rem] leading-[1.563rem]">
+        Training Studio is free CSS template for gyms and fitness centers. You are
+        <br class="hidden md:block" /> allowed to use this layout for your business website.
+      </p>
+    </div>
+  
+    <!-- Section des cartes -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mb-[4rem]">
+      <!-- Carte 1 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="Basic Fitness"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">Basic Fitness</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat consectetur qui assumenda incidunt
+            accusamus.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+  
+      <!-- Carte 2 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="Advanced Muscle Course"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">Advanced Muscle Course</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            You may want to browse through Digital Marketing or
+            <a class="text-[#ed563b]" href="#">Corporate</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+  
+      <!-- Carte 3 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="New Gym Training"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">New Gym Training</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corporis ipsam laudantium eligendi aperiam
+            voluptates mollitia.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+  
+      <!-- Carte 4 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="Yoga Training"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">Yoga Training</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae eum incidunt ratione quod.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+  
+      <!-- Carte 5 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="Basic Muscle Course"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">Basic Muscle Course</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            Credit goes to <a class="text-[#ed563b]" href="#">Pexels website</a>. Lorem ipsum dolor sit amet.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+  
+      <!-- Carte 6 -->
+      <div class="flex gap-6">
+        <img
+          class="w-[80px] h-[80px] flex-shrink-0"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+          alt="Body Building Course"
+        />
+        <div>
+          <h3 class="text-[#232d39] uppercase text-[1.188rem] font-[600]">Body Building Course</h3>
+          <p class="text-[#7a7a7a] text-[0.875rem] leading-[1.563rem]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi totam aliquid blanditiis.
+          </p>
+          <a class="text-[#ed563b] hover:underline cursor-pointer" href="#">Discover more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 2  Don’t think, begin today! -->
+
+<section class="w-screen mb-[4rem]">
+    <div class="relative flex flex-col justify-center items-center h-[50vh] md:h-[70vh] overflow-hidden">
+      <!-- Texte principal -->
+      <h1 class="absolute top-[15%] md:top-[20%] text-center text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] uppercase">
+        Don’t <span class="text-[#d8464d]">think</span>, begin <span class="text-[#d8464d]">today</span>!
+      </h1>
+      <!-- Image de fond -->
+      <img
+        src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg"
+        alt="Background"
+        class="absolute inset-0 w-full h-full object-cover bg-center bg-cover bg-no-repeat z-[-1]"
+      />
+      <!-- Paragraphe -->
+      <p class="mt-[2rem] md:mt-[4rem] px-[1rem] md:px-[2rem] text-[1rem] md:text-[1.2rem] leading-[1.5rem] text-center text-white">
+        Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio
+        augue eget libero. <br class="hidden md:block" /> Morbi tempus mauris a nisi luctus imperdiet.
+      </p>
+      <!-- Bouton -->
+      <button
+        class="mt-[2rem] bg-[#ed563b] hover:bg-orange-400 text-white uppercase p-[0.625rem] px-[1.5rem] rounded-md text-[0.875rem] md:text-[1rem] cursor-pointer hidden md:block"
+      >
+        Become a member
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 3 Our Classes -->
+
+<section class="max-w-[1120px] mx-auto px-4 mb-[4rem]" id="classes">
+    <!-- En-tête de section -->
+    <div class="mt-[10rem] mb-[4rem] flex flex-col gap-[1.25rem] justify-center items-center text-center">
+      <h2 class="text-black uppercase text-[1.75rem] md:text-[2rem] font-[800]">
+        Our <span class="text-[#d8464d]">Classes</span>
+      </h2>
+      <img
+        src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+        alt="Line decoration"
+      />
+      <p class="text-[#7a7a7a] text-[0.875rem] md:text-[1rem] leading-[1.563rem]">
+        Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
+        <br class="hidden md:block" /> ipsum dolor, ultricies fermentum massa consequat eu.
+      </p>
+    </div>
+  
+    <!-- Contenu principal -->
+    <div class="flex flex-col md:flex-row gap-[2rem] justify-between">
+      <!-- Liste des classes -->
+      <div class="flex flex-col w-full md:w-[35%] gap-6">
+        <div class="flex items-center gap-4 p-4 shadow-md hover:shadow-lg transition-shadow">
+          <img
+            class="w-10 h-10"
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+            alt="Icon 1"
+          />
+          <h3 class="text-[1.188rem] font-[600] text-[#232d39]">First Training Class</h3>
+        </div>
+        <div class="flex items-center gap-4 p-4 shadow-md hover:shadow-lg transition-shadow">
+          <img
+            class="w-10 h-10"
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+            alt="Icon 2"
+          />
+          <h3 class="text-[1.188rem] font-[600] text-[#232d39]">Second Training Class</h3>
+        </div>
+        <div class="flex items-center gap-4 p-4 shadow-md hover:shadow-lg transition-shadow">
+          <img
+            class="w-10 h-10"
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+            alt="Icon 3"
+          />
+          <h3 class="text-[1.188rem] font-[600] text-[#232d39]">Third Training Class</h3>
+        </div>
+        <div class="flex items-center gap-4 p-4 shadow-md hover:shadow-lg transition-shadow">
+          <img
+            class="w-10 h-10"
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+            alt="Icon 4"
+          />
+          <h3 class="text-[1.188rem] font-[600] text-[#232d39]">Fourth Training Class</h3>
+        </div>
+        <button class="bg-[#ed563b] hover:bg-[#d8464d] text-white py-2 px-4 rounded-md capitalize self-start">
+          View all schedules
+        </button>
+      </div>
+  
+      <!-- Image et détails -->
+      <div class="w-full md:w-[60%]">
+        <img
+          class="w-full h-auto rounded-md shadow-md"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/training-image-01.jpg"
+          alt="Training class"
+        />
+        <h3 class="text-[1.438rem] font-[700] text-[#232d39] mt-4">
+          First Training Class
+        </h3>
+        <p class="text-[0.875rem] text-[#7a7a7a] font-[400] mt-2 mb-4">
+          Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit
+          suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi
+          quis erat imperdiet, molestie nunc ut, accumsan diam.
+        </p>
+        <button class="bg-[#ed563b] hover:bg-orange-400 text-white py-2 px-4 rounded-md capitalize">
+          View schedule
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 4 Class Schedule -->
+
+<section id="schedules"
+  class="relative bg-no-repeat bg-cover bg-center h-auto py-20"
+  style="background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg');"
+>
+  <!-- Titre et description -->
+  <div class="flex flex-col justify-center items-center gap-5 text-center max-w-4xl mx-auto">
+    <h2 class="text-white uppercase text-2xl md:text-4xl font-extrabold">
+      Class <span class="text-[#d8464d]">Schedule</span>
+    </h2>
+    <img
+      src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+      alt="Separator"
+      class="my-2"
+    />
+    <p class="text-white text-sm md:text-base leading-relaxed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime saepe
+      repudiandae officia ipsum blanditiis ad voluptatibus repellendus
+      accusantium illum. Voluptate at, adipisci autem tempora obcaecati
+      sapiente incidunt dolor sit!
+    </p>
+  </div>
+
+  <!-- Navigation jours -->
+  <div class="text-center mt-8">
+    <div class="inline-flex space-x-4 text-white">
+      <a class="hover:text-[#d45f65] text-[#d8464d]" href="#">Monday</a>
+      <span>/</span>
+      <a class="hover:text-[#d45f65]" href="#">Tuesday</a>
+      <span>/</span>
+      <a class="hover:text-[#d45f65]" href="#">Thursday</a>
+      <span>/</span>
+      <a class="hover:text-[#d45f65]" href="#">Friday</a>
+    </div>
+  </div>
+
+  <!-- Tableau de l'horaire -->
+  <div class="overflow-x-auto mt-10 max-w-4xl mx-auto">
+    <table class="w-full border-collapse text-sm md:text-lg text-white text-center">
+    
+      <tbody>
+        <tr class="bg-[#232d39]">
+          <td class="p-4 border">Fitness Class</td>
+          <td class="p-4 border">10:00 AM</td>
+          <td class="p-4 border">11:30 AM</td>
+          <td class="p-4 border">William G. Stewart</td>
+        </tr>
+        <tr>
+          <td class="p-4 border">Muscle Training</td>
+          <td class="p-4 border">11:45 AM</td>
+          <td class="p-4 border">1:15 PM</td>
+          <td class="p-4 border">Paul D. Newman</td>
+        </tr>
+        <tr class="bg-[#232d39]">
+          <td class="p-4 border">Body Building</td>
+          <td class="p-4 border">2:00 PM</td>
+          <td class="p-4 border">3:30 PM</td>
+          <td class="p-4 border">Boyd C. Harris</td>
+        </tr>
+        <tr>
+          <td class="p-4 border">Yoga Training Class</td>
+          <td class="p-4 border">4:00 PM</td>
+          <td class="p-4 border">5:30 PM</td>
+          <td class="p-4 border">Hector T. Daigle</td>
+        </tr>
+        <tr class="bg-[#232d39]">
+          <td class="p-4 border">Advanced Training</td>
+          <td class="p-4 border">6:00 PM</td>
+          <td class="p-4 border">7:30 PM</td>
+          <td class="p-4 border">Bret D. Bowers</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Section 5 Expert Trainers -->
+
+<section class="max-w-[1120px] mx-auto my-[4rem]">
+    <!-- Titre et introduction -->
+    <div class="text-center mb-16">
+      <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-gray-900">
+        Expert <span class="text-[#d8464d]">Trainers</span>
+      </h2>
+      <img
+        src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+        alt="Separator"
+        class="my-4 mx-auto"
+      />
+      <p class="text-gray-500 text-sm md:text-base leading-relaxed text-center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam doloribus suscipit sed distinctio blanditiis vel placeat? Exercitationem neque suscipit iure, modi earum laboriosam. Cumque saepe eaque laboriosam, explicabo voluptatem recusandae, nulla corrupti totam minus natus enim odio quasi quod blanditiis!
+      </p>
+    </div>
+  
+    <!-- Cartes des entraîneurs -->
+    <div class="md:flex justify-center">
+      <!-- Carte 1 -->
+      <div class="bg-white shadow-md hover:shadow-lg rounded-lg transition-shadow max-w-xs p-[2rem] md:m-[2rem] m-[2rem]">
+        <img
+          class="w-full rounded-t-lg"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/first-trainer.jpg"
+          alt="First Trainer"
+        />
+        <div class="p-6">
+          <h5 class="text-sm font-semibold text-[#ed563b]">Strength Trainer</h5>
+          <h3 class="text-lg font-bold text-gray-900 mt-2">Bret D. Bowers</h3>
+          <p class="text-gray-500 text-sm mt-4">
+            Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents
+            gluten-free vegan church-key pour-over seitan flannel.
+          </p>
+          <div class="flex justify-start gap-4 mt-4">
+            <a
+              href="https://facebook.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://behance.net/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carte 2 -->
+      <div class="bg-white shadow-md hover:shadow-lg rounded-lg transition-shadow max-w-xs p-[2rem] md:m-[2rem] m-[2rem] ">
+        <img
+          class="w-full rounded-t-lg"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/second-trainer.jpg"
+          alt="Second Trainer"
+        />
+        <div class="p-6">
+          <h5 class="text-sm font-semibold text-[#ed563b]">Muscle Trainer</h5>
+          <h3 class="text-lg font-bold text-gray-900 mt-2">Hector T. Daigl</h3>
+          <p class="text-gray-500 text-sm mt-4">
+            Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents
+            gluten-free vegan church-key pour-over seitan flannel.
+          </p>
+          <div class="flex justify-start gap-4 mt-4">
+            <a
+              href="https://facebook.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://behance.net/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carte 3 -->
+      <div class="bg-white shadow-md hover:shadow-lg rounded-lg transition-shadow max-w-xs p-[2rem] md:m-[2rem] m-[2rem]">
+        <img
+          class="w-full rounded-t-lg"
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/third-trainer.jpg"
+          alt="Third Trainer"
+        />
+        <div class="p-6">
+          <h5 class="text-sm font-semibold text-[#ed563b]">Power Trainer</h5>
+          <h3 class="text-lg font-bold text-gray-900 mt-2">Paul D. Newman</h3>
+          <p class="text-gray-500 text-sm mt-4">
+            Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents
+            gluten-free vegan church-key pour-over seitan flannel.
+          </p>
+          <div class="flex justify-start gap-4 mt-4">
+            <a
+              href="https://facebook.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://behance.net/votreprofil"
+              target="_blank"
+              class="text-gray-700 hover:text-[#ed563b] text-xl"
+            >
+              <i class="fab fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 6 contact -->
+  
+<section id="contact">
+    <!-- Conteneur principal -->
+    <div class="flex flex-wrap md:flex-nowrap mb-[3rem]">
+      <!-- Carte Google Maps -->
+      <div class="w-full md:w-1/2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999522.9381395306!2d41.30764689671755!3d11.812970501079601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1622d46734f9f601%3A0x1472bba7ef0f5b88!2sDjibouti!5e0!3m2!1sfr!2sdj!4v1733213310115!5m2!1sfr!2sdj"
+          width="100%"
+          height="600"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+  
+      <!-- Formulaire de contact -->
+      <div
+        class="w-full md:w-1/2 relative bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');"
+      >
+        <form class="bg-white  text-black p-[1rem] m-[2rem] rounded-lg w-full max-w-lg">
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Your Name*"
+              required
+              class="w-full p-3 rounded border border-black text-gray-800  outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              placeholder="Your Email*"
+              required
+              class="w-full p-3 rounded border border-black text-gray-800  outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full p-3 rounded border border-black text-gray-800  outline-none"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Message"
+              class="w-full p-3 rounded border border-black text-gray-800  outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#ed563b] hover:bg-orange-500 text-white font-bold py-3 rounded shadow-md transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Footer -->
+
+<footer class="mb-[4rem]">
+    <p class="text-black text-center text-sm md:text-base flex flex-wrap justify-center items-center gap-1">
+      Copyright &copy; 2024 Training Studio - Cloned by 
+      <a 
+        class="text-[#d45f65] hover:text-[#b43a4a] transition-colors"
+        href="#" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Samatar
+      </a>
+    </p>
+  </footer>
+    
+
+    <script>
+      const btn = document.getElementById("menu");
+      const mobile = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        mobile.classList.toggle("flex");
+        mobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+
+</html>
